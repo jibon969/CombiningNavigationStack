@@ -1,18 +1,24 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { SafeAreaView, View, StatusBar, StyleSheet, Text } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import DrawerNavigator from './src/navigation/DrawerNavigator'
 
 const App = () => {
   return (
-    <View>
-      <Text style={styles.title}>Hello World !</Text>
-    </View>
+    <SafeAreaView style={styles.safeArea}>
+      <StatusBar barStyle="dark-content" />
+      <NavigationContainer>
+          <DrawerNavigator/>
+      </NavigationContainer>
+    </SafeAreaView>
   )
 }
 
-export default App
-
 const styles = StyleSheet.create({
-  title:{
-    backgroundColor:"red", padding:10, textAlign:"center", fontSize:20, color:"#FFF"
-  }
+  safeArea: {
+    flex: 1,
+    overflow: 'hidden',
+  },
 })
+
+export default App
