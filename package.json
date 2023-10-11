@@ -1,5 +1,5 @@
 {
-  "name": "CombiningNavigationStack",
+  "name": "CombiningNavigationCLI",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -45,4 +45,3 @@
     "node": ">=16"
   }
 }
-

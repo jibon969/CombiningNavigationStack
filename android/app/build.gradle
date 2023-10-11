@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.combiningnavigationstack"
+    namespace "com.combiningnavigationcli"
     defaultConfig {
-        applicationId "com.combiningnavigationstack"
+        applicationId "com.combiningnavigationcli"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
