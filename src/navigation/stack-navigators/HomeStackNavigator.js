@@ -30,7 +30,7 @@ const HomeStackNavigator = () => {
             headerLeft: () => route.name === "Home" ? (
                     <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={styles.headerLeft}>
                         {/* <FontAwesome name="bars" size={25} color="#fff" style={{padding: 5}}/> */}
-                        <Text>Hello</Text>
+                        <Text style={{color:"#FFF"}}>Need Icon</Text>
                     </TouchableOpacity>
                 ) :
                 (
