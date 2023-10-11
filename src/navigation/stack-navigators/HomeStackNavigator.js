@@ -35,7 +35,7 @@ const HomeStackNavigator = () => {
                 ) :
                 (
                     <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={styles.headerLeft}>
-                        <Text>Hello</Text>
+                        <Text style={{color:"#FFF"}}>Hello</Text>
                         {/* <FontAwesome name="bars" size={25} color="#fff" style={{padding: 5}}/> */}
                     </TouchableOpacity>
                 ),
@@ -46,14 +46,14 @@ const HomeStackNavigator = () => {
                             <TouchableOpacity onPress={() => navigation.navigate('SearchStack')}
                                 style={styles.touchableButton}>
                                 {/* <FontAwesome name="search" size={20} color="#fff"/> */}
-                                <Text>Hello</Text>
+                                <Text style={{color:"#FFF"}}>w</Text>
                             </TouchableOpacity>
                         </Text>
                         <Text style={styles.headerSearchIcon}>
                             <TouchableOpacity onPress={() => navigation.navigate('UserProfileStack')}
                                               style={styles.touchableButton}>
                                 {/* <FontAwesome name="user" size={20} color="#fff"/> */}
-                                <Text>Hello</Text>
+                                <Text style={{color:"#FFF"}}>t</Text>
                             </TouchableOpacity>
                         </Text>
                     </View>
