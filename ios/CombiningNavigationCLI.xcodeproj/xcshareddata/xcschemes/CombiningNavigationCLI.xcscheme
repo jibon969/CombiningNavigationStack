@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "CombiningNavigationStack.app"
-               BlueprintName = "CombiningNavigationStack"
-               ReferencedContainer = "container:CombiningNavigationStack.xcodeproj">
+               BuildableName = "CombiningNavigationCLI.app"
+               BlueprintName = "CombiningNavigationCLI"
+               ReferencedContainer = "container:CombiningNavigationCLI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "CombiningNavigationStackTests.xctest"
-               BlueprintName = "CombiningNavigationStackTests"
-               ReferencedContainer = "container:CombiningNavigationStack.xcodeproj">
+               BuildableName = "CombiningNavigationCLITests.xctest"
+               BlueprintName = "CombiningNavigationCLITests"
+               ReferencedContainer = "container:CombiningNavigationCLI.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "CombiningNavigationStack.app"
-            BlueprintName = "CombiningNavigationStack"
-            ReferencedContainer = "container:CombiningNavigationStack.xcodeproj">
+            BuildableName = "CombiningNavigationCLI.app"
+            BlueprintName = "CombiningNavigationCLI"
+            ReferencedContainer = "container:CombiningNavigationCLI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "CombiningNavigationStack.app"
-            BlueprintName = "CombiningNavigationStack"
-            ReferencedContainer = "container:CombiningNavigationStack.xcodeproj">
+            BuildableName = "CombiningNavigationCLI.app"
+            BlueprintName = "CombiningNavigationCLI"
+            ReferencedContainer = "container:CombiningNavigationCLI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
