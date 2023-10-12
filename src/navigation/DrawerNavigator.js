@@ -4,8 +4,9 @@ import {createDrawerNavigator, DrawerContentScrollView, DrawerItem} from '@react
 import BottomTabNavigator from './BottomTabNavigator'
 import {screens} from './RouteItems'
 import {useDrawerStatus} from '@react-navigation/drawer';
-// import {FontAwesome, AntDesign} from '@expo/vector-icons';
 
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const Drawer = createDrawerNavigator();
 
@@ -18,8 +19,8 @@ const CustomDrawerContent = (props) => {
     const [categoryFocus, setCategoryFocus] = useState(false);
 
     // perfume
-    const [nestedPerfumeDrawerItem, setNestedPerfumeDrawerItem] = useState(false);
-    const [perfumeFocus, setPerfumeFocus] = useState(false);
+    const [nestedItemDrawerItem, setNestedItemDrawerItem] = useState(false);
+    const [nestedFocus, setNestedFocus] = useState(false);
 
     useEffect(() => {
         if (isDrawerOpen === false) {
@@ -38,12 +39,12 @@ const CustomDrawerContent = (props) => {
         }
     };
 
-    const handlePerfumeNestedDrawerItem = () =>{
-        if (nestedPerfumeDrawerItem === true){
-            setNestedPerfumeDrawerItem(false)
+    const handleNestedItemDrawerItem = () => {
+        if (nestedItemDrawerItem === true) {
+            setNestedItemDrawerItem(false)
         }
         else {
-            setNestedPerfumeDrawerItem(true)
+            setNestedItemDrawerItem(true)
         }
     };
 
@@ -52,33 +53,32 @@ const CustomDrawerContent = (props) => {
         <DrawerContentScrollView {...props}>
             {/*Home*/}
             <DrawerItem
-                key='Home'
                 label={() => (
-                    <View style={{flexDirection: "row"}}>
-                        {/* <AntDesign name="leftcircleo" size={20} color="#FFF"/> */}
-                        {/*<Image source={require('../app/assets/headerLogo.png')}*/}
-                        {/*style={{width: "80%", height: 20, marginLeft: 20}}/>*/}
-                        <Text style={styles.headerTitle}>Application Name</Text>
+                    <View style={{flexDirection: "row", justifyItems: "center", alignItems: "center"}}>
+                        <AntDesign name="leftcircleo" size={20} color="#007036"/>
+                        {/* <Image source={require('../assets/icon/belaface.png')}
+                               resizeMode="cover"
+                               style={{maxWidth: '80%', maxHeight: 25, marginLeft: 10}}
+                        /> */}
+                        <Text> Application Name</Text>
                     </View>
                 )}
                 onPress={() => props.navigation.navigate('Home')}
                 style={styles.drawerItem2}
             />
 
-
-            {/*Start Category*/}
             <DrawerItem
-                key='Category'
                 label={() => (
                     <View>
                         <View style={{flexDirection: 'row'}}>
-                            <Text style={[categoryFocus ? styles.drawerLabelFocused : styles.drawerLabel, {color: '#FFF'}]}>
-                                Category
+                            <Text
+                                style={[categoryFocus ? styles.drawerLabelFocused : styles.drawerLabel, {color: '#007036'}]}>
+                                Contact Us
                             </Text>
                             {
                                 nestedDrawerItem === true
-                                    ? <Text>Hwllo</Text>
-                                    : <Text>Hwllo</Text>
+                                    ? <AntDesign name="minus" size={24} color={categoryFocus ? '#007036' : '#007036'}/>
+                                    : <AntDesign name="plus" size={24} color={categoryFocus ? '#007036' : '#007036'}/>
                             }
                         </View>
                     </View>
@@ -93,74 +93,70 @@ const CustomDrawerContent = (props) => {
             <View style={styles.drawerNestedItemContainer}>
                 {nestedDrawerItem && (
                     <DrawerItem
-                        key='SubCategory'
                         label={() => (
                             <Text style={styles.drawerLabel}>
-                                Sub 1
+                                Message
                             </Text>
                         )}
-                         onPress={() => props.navigation.navigate('SearchStack')}
+                        onPress={() => props.navigation.navigate('MessageStack')}
                     />
                 )}
                 {nestedDrawerItem && (
                     <DrawerItem
-                        key='SubCategory1'
                         label={() => (
                             <Text style={styles.drawerLabel}>
-                                Sub 2
+                                Contact Us
                             </Text>
                         )}
-                        onPress={() => props.navigation.navigate('SearchStack')}
+                        onPress={() => props.navigation.navigate('ContactStack')}
                     />
                 )}
             </View>
+
             {/*/End Category*/}
 
-             {/*Start perfume*/}
             <DrawerItem
-                key='perfume'
                 label={() => (
                     <View>
                         <View style={{flexDirection: 'row'}}>
-                            <Text style={[perfumeFocus ? styles.drawerLabelFocused : styles.drawerLabel, {color: '#FFF'}]}>
-                                Perfume
+                            <Text
+                                style={[nestedFocus ? styles.drawerLabelFocused : styles.drawerLabel, {color: '#007036'}]}>
+                                Need Help
                             </Text>
                             {
-                                nestedPerfumeDrawerItem === true
-                                    ? <Text>Hwllo</Text>
-                                    : <Text>Hwllo</Text>
+                                nestedItemDrawerItem === true
+                                    ? <AntDesign name="minus" size={24} color={nestedFocus ? '#007036' : '#007036'}/>
+                                    : <AntDesign name="plus" size={24} color={nestedFocus ? '#007036' : '#007036'}/>
                             }
                         </View>
                     </View>
                 )}
                 onPress={() => {
-                    setPerfumeFocus(true);
-                    handlePerfumeNestedDrawerItem()
+                    setNestedFocus(true);
+                    handleNestedItemDrawerItem()
                 }}
                 style={categoryFocus ? styles.drawerItemFocused : styles.drawerItem}
             />
 
             <View style={styles.drawerNestedItemContainer}>
-                {nestedPerfumeDrawerItem && (
+                {nestedItemDrawerItem && (
                     <DrawerItem
-                        key='Man'
                         label={() => (
                             <Text style={styles.drawerLabel}>
-                                Man
+                                FAQ
                             </Text>
                         )}
-                         onPress={() => props.navigation.navigate('SearchStack')}
+                        onPress={() => props.navigation.navigate('FAQStack')}
                     />
                 )}
-                {nestedPerfumeDrawerItem && (
+                {nestedItemDrawerItem && (
                     <DrawerItem
-                        key='Woman'
                         label={() => (
                             <Text style={styles.drawerLabel}>
-                                Woman
+                                Call
                             </Text>
                         )}
-                        onPress={() => props.navigation.navigate('SearchStack')}
+                        onPress={() => props.navigation.navigate('CallStack')}
                     />
                 )}
             </View>
@@ -168,24 +164,12 @@ const CustomDrawerContent = (props) => {
 
             {/*About Us*/}
             <DrawerItem
-                key='About'
                 label={() => (
                     <Text style={styles.drawerLabel2}>
                         About Us
                     </Text>
                 )}
                 onPress={() => props.navigation.navigate('AboutStack')}
-                style={styles.drawerItem2}
-            />
-            {/*Contact*/}
-            <DrawerItem
-                key='Contact'
-                label={() => (
-                    <Text style={styles.drawerLabel2}>
-                        Contact Us
-                    </Text>
-                )}
-                onPress={() => props.navigation.navigate('ContactStack')}
                 style={styles.drawerItem2}
             />
         </DrawerContentScrollView>
@@ -198,7 +182,7 @@ const DrawerNavigator = ({nav}) => {
         <Drawer.Navigator
             screenOptions={({navigation}) => ({
                 headerStyle: {
-                    backgroundColor: "#551E18",
+                    backgroundColor: "#184772",
                     ...Platform.select({
                         ios: {
                             height: 50,
@@ -210,8 +194,7 @@ const DrawerNavigator = ({nav}) => {
                 },
                 headerLeft: () => (
                     <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={styles.headerLeft}>
-                        {/* <FontAwesome name="bars" size={25} color="#fff" style={{padding: 5}}/> */}
-                        <Text>Ball</Text>
+                        <FontAwesome name="bars" size={25} color="#fff" style={{padding: 5}}/>
                     </TouchableOpacity>
                 ),
                 swipeEdgeWidth: 0,
@@ -257,34 +240,36 @@ const styles = StyleSheet.create({
     drawerLabel: {
         fontSize: 14,
         width: "100%",
+        fontWeight: '500',
     },
     drawerLabel2: {
         fontSize: 14,
         width: "100%",
-        color: "#FFF",
-        backgroundColor: "#551E18",
+        color: "#007036",
+        fontWeight: '500',
     },
     drawerLabelFocused: {
         fontSize: 14,
         fontWeight: '500',
         width: "100%",
-        color: "#FFF",
+        color: "#000",
+
     },
     drawerItem: {
         height: 50,
         justifyCenter: "center",
-        backgroundColor: "#551E18",
-        color: "#FFF"
+        backgroundColor: "#E9EBEC",
+        color: "#007036"
 
     },
     drawerItem2: {
-        backgroundColor: "#551E18",
-        color: "#FFF"
+        backgroundColor: "#E9EBEC",
+        color: "#007036"
     },
 
     drawerItemFocused: {
-        backgroundColor: "#551E18",
-        color: "#FFF"
+        backgroundColor: "#E9EBEC",
+        color: "#007036"
     },
     white: {
         color: 'white',
@@ -294,7 +279,7 @@ const styles = StyleSheet.create({
     },
     touchableButton: {
         borderRadius: 50,
-        backgroundColor: "#551E18",
+        backgroundColor: "#FFF",
         overflow: "hidden",
     }
 });
