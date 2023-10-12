@@ -27,7 +27,7 @@ const tabOptions = ({route}) => {
     }
 
     return {
-        // tabBarIcon: ({focused}) => item.icon(focused),
+        tabBarIcon: ({focused}) => item.icon(focused),
         tabBarLabel: () => (
             <Text style={styles.tabBarLabel}>{item.title || ''}</Text>
         ),

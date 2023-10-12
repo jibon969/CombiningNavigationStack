@@ -1,5 +1,9 @@
 import * as React from 'react'
-// import Icon from 'react-native-vector-icons/FontAwesome'
+
+import FontAwesome from 'react-native-vector-icons/FontAwesome'
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
+import Ionicons from 'react-native-vector-icons/Ionicons'
+
 
 export const screens = {
     HomeTab: 'HomeTab',
@@ -29,8 +33,8 @@ export const routes = [
         title: 'Home',
         showInTab: false,
         showInDrawer: false,
-        // icon: (focused) =>
-        //     <Icon name="home" size={30} color={focused ? '#551E18' : '#000'}/>,
+        icon: (focused) =>
+            <FontAwesome name="home" size={30} color={focused ? '#551E18' : '#000'}/>,
     },
     {
         name: screens.HomeStack,
@@ -38,8 +42,8 @@ export const routes = [
         title: 'Home',
         showInTab: true,
         showInDrawer: true,
-        // icon: (focused) =>
-        //     <Icon name="home" size={30} color={focused ? '#551E18' : '#000'}/>,
+        icon: (focused) =>
+            <FontAwesome name="home" size={30} color={focused ? '#551E18' : '#000'}/>,
     },
     {
         name: screens.Home,
@@ -47,8 +51,8 @@ export const routes = [
         title: 'Home',
         showInTab: true,
         showInDrawer: false,
-        // icon: (focused) =>
-        //     <Icon name="home" size={30} color={focused ? '#551E18' : '#000'}/>,
+        icon: (focused) =>
+            <FontAwesome name="home" size={30} color={focused ? '#551E18' : '#000'}/>,
     },
 
     // AboutStack ==============================================================
@@ -58,8 +62,8 @@ export const routes = [
         title: 'About',
         showInTab: true,
         showInDrawer: true,
-        // icon: (focused) =>
-        //     <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
+        icon: (focused) =>
+            <FontAwesome name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
     },
     {
         name: screens.About,
@@ -67,8 +71,8 @@ export const routes = [
         title: 'About',
         showInTab: true,
         showInDrawer: true,
-        // icon: (focused) =>
-        //     <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
+        icon: (focused) =>
+            <FontAwesome name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
     },
 
     // ContactStack ============================================================
@@ -79,8 +83,8 @@ export const routes = [
         title: 'Contact Us',
         showInTab: true,
         showInDrawer: true,
-        // icon: (focused) =>
-        //     <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
+         icon: (focused) =>
+            <FontAwesome name="envelope" size={30} color={focused ? '#551E18' : '#000'}/>,
     },
     {
         name: screens.Contact,
@@ -88,8 +92,8 @@ export const routes = [
         title: 'Contact Us',
         showInTab: true,
         showInDrawer: true,
-        // icon: (focused) =>
-        //     <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
+        icon: (focused) =>
+          <FontAwesome name="envelope" size={30} color={focused ? '#551E18' : '#000'}/>,
     },
 
     // SearchStack ============================================================
@@ -99,17 +103,6 @@ export const routes = [
         title: 'Search',
         showInTab: false,
         showInDrawer: true,
-        // icon: (focused) =>
-        //     <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
-    },
-    {
-        name: screens.Search,
-        focusedRoute: screens.SearchStack,
-        title: 'Search',
-        showInTab: false,
-        showInDrawer: false,
-        // icon: (focused) =>
-        //     <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
     },
 
     // UserProfileStack =======================================================
@@ -119,16 +112,6 @@ export const routes = [
         title: 'UserProfile',
         showInTab: false,
         showInDrawer: true,
-        // icon: (focused) =>
-        //     <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
     },
-    {
-        name: screens.UserProfile,
-        focusedRoute: screens.UserProfileStack,
-        title: 'UserProfile',
-        showInTab: false,
-        showInDrawer: false,
-        // icon: (focused) =>
-        //     <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
-    },
+
 ];

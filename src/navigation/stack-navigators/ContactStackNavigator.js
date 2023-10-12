@@ -4,6 +4,8 @@ import {Platform, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import ContactScreen from "../../screens/ContactScreen";
 
 import Icon from 'react-native-vector-icons/FontAwesome';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+
 
 const Stack = createStackNavigator();
 
@@ -19,7 +21,7 @@ const ContactStackNavigator = () => {
             },
             headerLeft: () => (
                 <TouchableOpacity onPress={() => navigation.goBack()} style={styles.headerLeft}>
-                    <Icon name="arrow-left" size={25} color="#fff" style={{padding: 5}}/>
+                    <AntDesign name="arrowleft" size={25} color="#fff" style={{padding: 5}}/>
                 </TouchableOpacity>
             ),
             headerRight: () => (
