@@ -10,16 +10,19 @@ import {
     TouchableOpacity
 } from 'react-native';
 
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
-const UserProfileScreen = ({navigation}) => {
+
+const UserProfileScreen = ({ navigation }) => {
 
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.userProfile}>
                 <View style={styles.userProfileImageWrap}>
                     <Image source={require('../../src/assets/icon/user-icon.jpg')}
-                           style={styles.profileImage}
-                           resizeMode={'contain'}
+                        style={styles.profileImage}
+                        resizeMode={'contain'}
                     />
                 </View>
                 <View style={styles.userProfileWrapper}>
@@ -31,8 +34,7 @@ const UserProfileScreen = ({navigation}) => {
                         <View style={styles.userProfileContent}>
                             <View style={styles.profileIcon}>
                                 <Text>
-                                    {/* <MaterialIcons name="read-more" size={24} color="black"/> */}
-                                    Hello
+                                    <MaterialIcons name="read-more" size={24} color="black" />
                                 </Text>
                             </View>
                             <View style={styles.profileInfo}>
@@ -40,8 +42,7 @@ const UserProfileScreen = ({navigation}) => {
                             </View>
                             <View style={styles.profileRightArrow}>
                                 <Text>
-                                    {/* <MaterialIcons name="keyboard-arrow-right" size={24} color="black"/> */}
-                                    Hello
+                                    <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
                                 </Text>
                             </View>
                         </View>
@@ -52,8 +53,7 @@ const UserProfileScreen = ({navigation}) => {
                         <View style={styles.userProfileContent}>
                             <View style={styles.profileIcon}>
                                 <Text>
-                                    {/* <MaterialIcons name="read-more" size={24} color="black"/> */}
-                                    Hello
+                                    <MaterialIcons name="read-more" size={24} color="black" />
                                 </Text>
                             </View>
                             <View style={styles.profileInfo}>
@@ -61,8 +61,7 @@ const UserProfileScreen = ({navigation}) => {
                             </View>
                             <View style={styles.profileRightArrow}>
                                 <Text>
-                                    {/* <MaterialIcons name="keyboard-arrow-right" size={24} color="black"/> */}
-                                    Hello
+                                    <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
                                 </Text>
                             </View>
                         </View>
@@ -73,8 +72,7 @@ const UserProfileScreen = ({navigation}) => {
                         <View style={styles.userProfileContent}>
                             <View style={styles.profileIcon}>
                                 <Text>
-                                    {/* <MaterialIcons name="read-more" size={24} color="black"/> */}
-                                    Hello
+                                    <MaterialIcons name="read-more" size={24} color="black" />
                                 </Text>
                             </View>
                             <View style={styles.profileInfo}>
@@ -82,8 +80,7 @@ const UserProfileScreen = ({navigation}) => {
                             </View>
                             <View style={styles.profileRightArrow}>
                                 <Text>
-                                    {/* <MaterialIcons name="keyboard-arrow-right" size={24} color="black"/> */}
-                                    Hello
+                                    <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
                                 </Text>
                             </View>
                         </View>
@@ -94,8 +91,7 @@ const UserProfileScreen = ({navigation}) => {
                         <View style={styles.userProfileContent}>
                             <View style={styles.profileIcon}>
                                 <Text>
-                                    {/* <AntDesign name="contacts" size={24} color="black"/> */}
-                                    Hello
+                                    <AntDesign name="contacts" size={24} color="black"/>
                                 </Text>
                             </View>
                             <View style={styles.profileInfo}>
@@ -103,8 +99,7 @@ const UserProfileScreen = ({navigation}) => {
                             </View>
                             <View style={styles.profileRightArrow}>
                                 <Text>
-                                    {/* <MaterialIcons name="keyboard-arrow-right" size={24} color="black"/> */}
-                                    Hello
+                                    <MaterialIcons name="keyboard-arrow-right" size={24} color="black"/>
                                 </Text>
                             </View>
                         </View>
@@ -115,8 +110,7 @@ const UserProfileScreen = ({navigation}) => {
                         <View style={styles.userProfileContent}>
                             <View style={styles.profileIcon}>
                                 <Text>
-                                    {/* <MaterialIcons name="read-more" size={24} color="black"/> */}
-                                    Hello
+                                    <MaterialIcons name="read-more" size={24} color="black"/>
                                 </Text>
                             </View>
                             <View style={styles.profileInfo}>
@@ -124,8 +118,7 @@ const UserProfileScreen = ({navigation}) => {
                             </View>
                             <View style={styles.profileRightArrow}>
                                 <Text>
-                                    {/* <MaterialIcons name="keyboard-arrow-right" size={24} color="black"/> */}
-                                    Hello
+                                    <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
                                 </Text>
                             </View>
                         </View>
@@ -136,8 +129,7 @@ const UserProfileScreen = ({navigation}) => {
                         <View style={styles.userProfileContent}>
                             <View style={styles.profileIcon}>
                                 <Text>
-                                    {/* <AntDesign name="setting" size={24} color="black"/> */}
-                                    Hello
+                                    <AntDesign name="setting" size={24} color="black" />
                                 </Text>
                             </View>
                             <View style={styles.profileInfo}>
@@ -145,8 +137,7 @@ const UserProfileScreen = ({navigation}) => {
                             </View>
                             <View style={styles.profileRightArrow}>
                                 <Text>
-                                    {/* <MaterialIcons name="keyboard-arrow-right" size={24} color="black"/> */}
-                                    Hello
+                                    <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
                                 </Text>
                             </View>
                         </View>

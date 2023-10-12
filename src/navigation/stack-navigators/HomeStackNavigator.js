@@ -1,6 +1,7 @@
 import React from 'react'
 import {Image, Platform, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import {createStackNavigator} from '@react-navigation/stack'
+
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import HomeScreen from '../../screens/HomeScreen'
