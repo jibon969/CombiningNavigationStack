@@ -1,7 +1,6 @@
 import React from 'react'
 import {Image, Platform, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import {createStackNavigator} from '@react-navigation/stack'
-// import {FontAwesome} from "@expo/vector-icons";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import HomeScreen from '../../screens/HomeScreen'
@@ -29,15 +28,12 @@ const HomeStackNavigator = () => {
             },
             headerLeft: () => route.name === "Home" ? (
                     <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={styles.headerLeft}>
-                        {/* <FontAwesome name="bars" size={25} color="#fff" style={{padding: 5}}/> */}
-                        {/* <Text style={{color:"#FFF"}}>Need Icon</Text> */}
-                        <Icon name="bars" size={30} color="black" />
+                        <Icon name="bars" size={25} color="#fff" style={{padding: 5}} />
                     </TouchableOpacity>
                 ) :
                 (
                     <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={styles.headerLeft}>
-                        <Text style={{color:"#FFF"}}>Hello</Text>
-                        {/* <FontAwesome name="bars" size={25} color="#fff" style={{padding: 5}}/> */}
+                        <Icon name="bars" size={25} color="#fff" style={{padding: 5}} />
                     </TouchableOpacity>
                 ),
             headerRight: () => (
@@ -46,15 +42,13 @@ const HomeStackNavigator = () => {
                         <Text style={styles.headerSearchIcon}>
                             <TouchableOpacity onPress={() => navigation.navigate('SearchStack')}
                                 style={styles.touchableButton}>
-                                {/* <FontAwesome name="search" size={20} color="#fff"/> */}
-                                <Text style={{color:"#FFF"}}>w</Text>
+                                <Icon name="search" size={20} color="#fff"/>
                             </TouchableOpacity>
                         </Text>
                         <Text style={styles.headerSearchIcon}>
                             <TouchableOpacity onPress={() => navigation.navigate('UserProfileStack')}
                                               style={styles.touchableButton}>
-                                {/* <FontAwesome name="user" size={20} color="#fff"/> */}
-                                <Text style={{color:"#FFF"}}>t</Text>
+                                <Icon name="user" size={20} color="#fff" />
                             </TouchableOpacity>
                         </Text>
                     </View>
