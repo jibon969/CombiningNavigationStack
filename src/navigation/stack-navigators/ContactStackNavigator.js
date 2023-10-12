@@ -19,8 +19,7 @@ const ContactStackNavigator = () => {
             },
             headerLeft: () => (
                 <TouchableOpacity onPress={() => navigation.goBack()} style={styles.headerLeft}>
-                    {/* <Ionicons name="arrow-back-outline" size={25} color="#fff" style={{padding: 5}}/> */}
-                    <Text>Hello</Text>
+                    <Icon name="arrow-left" size={25} color="#fff" style={{padding: 5}}/>
                 </TouchableOpacity>
             ),
             headerRight: () => (
@@ -29,16 +28,14 @@ const ContactStackNavigator = () => {
                         <Text style={styles.headerSearchIcon}>
                             <TouchableOpacity onPress={() => navigation.navigate('SearchStack')}
                                 style={styles.touchableButton}>
-                                {/* <FontAwesome name="search" size={20} color="#fff"/> */}
-                                <Text>Hello</Text>
+                                <Icon name="search" size={20} color="#fff"/>
                             </TouchableOpacity>
                         </Text>
                         <Text style={styles.headerSearchIcon}>
                             <TouchableOpacity
                                 onPress={() => navigation.navigate('UserProfileStack')}
                                 style={styles.touchableButton}>
-                                {/* <FontAwesome name="user" size={20} color="#fff"/> */}
-                                <Text>Hello</Text>
+                                <Icon name="user" size={20} color="#fff"/>
                             </TouchableOpacity>
                         </Text>
                     </View>
