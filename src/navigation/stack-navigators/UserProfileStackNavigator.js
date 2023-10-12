@@ -1,7 +1,9 @@
 import React from 'react'
 import {createStackNavigator} from '@react-navigation/stack'
 import {Platform, StyleSheet, Text, TouchableOpacity, View} from "react-native";
-// import {FontAwesome, Ionicons} from "@expo/vector-icons";
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+
 import UserProfileScreen from "../../screens/UserProfileScreen";
 
 const Stack = createStackNavigator();
