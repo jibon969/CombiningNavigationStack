@@ -1,12 +1,11 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
+### React Native Combining Drawer, Tab and Stack navigators in React Navigation
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
+##  Install react navigation and its dependencies
 
-# Install react navigation and its dependencies
->**Install**: yarn add @react-navigation/native react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated @react-navigation/stack @react-navigation/drawer @react-navigation/bottom-tabs
+> yarn add @react-navigation/native react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated @react-navigation/stack @react-navigation/drawer @react-navigation/bottom-tabs
 
 
 ## Step 1: Start the Metro Server
