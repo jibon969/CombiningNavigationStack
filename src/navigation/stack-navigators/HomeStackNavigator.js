@@ -21,12 +21,12 @@ const HomeStackNavigator = () => {
             },
             headerLeft: () => route.name === "Home" ? (
                     <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={styles.headerLeft}>
-                        <Icon name="bars" size={25} color="#fff" style={{padding: 5}} />
+                        <Icon name="bars" size={20} color="#fff" style={{padding: 5}} />
                     </TouchableOpacity>
                 ) :
                 (
                     <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={styles.headerLeft}>
-                        <Icon name="bars" size={25} color="#fff" style={{padding: 5}} />
+                        <Icon name="bars" size={20} color="#fff" style={{padding: 5}} />
                     </TouchableOpacity>
                 ),
             headerRight: () => (
@@ -35,13 +35,13 @@ const HomeStackNavigator = () => {
                         <Text style={styles.headerSearchIcon}>
                             <TouchableOpacity onPress={() => navigation.navigate('SearchStack')}
                                 style={styles.touchableButton}>
-                                <Icon name="search" size={20} color="#fff"/>
+                                <Icon name="search" size={16} color="#fff"/>
                             </TouchableOpacity>
                         </Text>
                         <Text style={styles.headerSearchIcon}>
                             <TouchableOpacity onPress={() => navigation.navigate('UserProfileStack')}
                                               style={styles.touchableButton}>
-                                <Icon name="user" size={20} color="#fff" />
+                                <Icon name="user" size={16} color="#fff" />
                             </TouchableOpacity>
                         </Text>
                     </View>
