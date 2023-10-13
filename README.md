@@ -1,5 +1,5 @@
 
-# React Native Combining Drawer, Tab and Stack navigators in React Navigation
+### React Native Combining Drawer, Tab and Stack navigators in React Navigation
 
 ##  Install react navigation and its dependencies
 
