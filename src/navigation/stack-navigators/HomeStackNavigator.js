@@ -11,14 +11,6 @@ const Stack = createStackNavigator();
 
 const HomeStackNavigator = () => {
 
-    // const headerShow = (route) => {
-    //     if (route === 'Welcome') {
-    //         return false
-    //     } else {
-    //         return true
-    //     }
-    // };
-
     return (
         <Stack.Navigator screenOptions={({navigation, route}) => ({
             // headerShown: headerShow(route.name),
